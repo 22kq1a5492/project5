@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>loginform</title>    
+    </head>
+    <style>
+        #loginform{
+            max-width:300px;
+            margin:auto;
+            padding:10px;
+            background-color:none;
+            border-radius:10px;
+            border:20px black;
+           box-sizing: border-box;
+           box-shadow: aliceblue;
+        
+        }
+        body{
+            background-image:url("LOGIN.jpg");
+            background-size:100%;
+            padding-top:100px;
+        }
+        input[type="submit"]{
+        color:black;
+        background-color: aquamarine;}
+        label {
+            display:block;
+            margin-bottom:10px;
+            color:black;
+    
+        
+        }
+    </style>
+    <body>
+        <script>
+        function loginValidation() {
+            // Ramesh
+  var uname = document.myform.username.value;
+             //Ramesh@123
+  var password = document.myform.password.value;
+            if(uname==null || uname=="") {
+              alert("Name cant be blank")
+              return false;  
+           } else if (password.length<6){
+              alert("Password Must be 6 letters")
+              return false;
+           }  
+           return true                 
+        }           
+     </script>
+        <li><a href="C:\Users\srajy\OneDrive\Desktop\UIDEVELOPMENT\PROJECT5\website.html">HOME</li></a>
+        <center>
+        <form name="myform" id="loginform" action="LoginSuccess.html" 	onsubmit="return loginValidation(this)">
+            <h1> SIGN IN</h1>
+        <label for username>User Name:</label>
+        <input type="text" name="username" autofocus placeholder="username"><br><br>
+        <label for password>Password:</label>
+        <input type="text" name="password" placeholder="password"><br><br>
+               <input type="submit" value="login">
+            </form>
+        </center>
+    </body>
+</html>

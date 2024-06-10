@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>contact</title>
+        
+    </head>
+    <style>
+        body{
+            background-image:url("contact.jpeg");
+            background-size: cover;
+            color:black;
+        }
+        input[type="submit"]{
+        color:black}
+        label {
+            display:block;
+            margin-bottom:10px;
+            color:whitesmoke;
+        }
+    </style>
+    <body>
+        <li><a href="C:\Users\srajy\OneDrive\Desktop\UIDEVELOPMENT\PROJECT5\website.html">HOME</li></a>
+        <center>
+            <h1>CONTACT US</h1>
+            <label for fullname>Full Name:</label>
+            <input type="text" name="fname"placeholder="Full Name"autofocus required><br>
+            <label for phonenumber>Phone Number:</label>
+            <input type="tel" name="name" pattern="[0-9]{10}"title="the ten digits number"placeholder="Phone Number" required><br>
+            <script>  
+                function validateemail()  
+                {  
+                var myemail=document.myform.Email.value;  
+                var atposition=myemail.indexOf("@");  
+                var dotposition=myemail.lastIndexOf(".");  
+                if (atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){  
+                  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+                  return false;  
+                  }  
+                }  
+                </script>    
+            <form name="myform"  method="post" action="LoginSuccess.html" onsubmit="return validateemail();">
+            <label for email>Email:</label>
+            <input type="name" name="Email" placeholder="@gmail" required><br>
+               <input type="submit">
+        <center>
+</form>
+<body>
+    </body>
+</html>
